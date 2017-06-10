@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>
+<html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>
+<html lang="en" ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en" ng-app="myApp" class="no-js"> <!--<![endif]-->
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Aviso Assignment </title>
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/normalize.css">
+<link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/main.css">
+<link rel="stylesheet" href="multiselect.css">
+<link rel="stylesheet" href="app.css">
+<script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+<body ng-controller="mainCtrl">
+<h1> Aviso Home Assignment 2</h1>
+
+<table>
+    <tr>
+        <th class="name">
+            <a href="#">
+                NAME
+            </a>
+        </th>
+        <th class="plan">
+            <a href="#">
+                PLAN
+            </a>
+        </th>
+        <th class="forecast">
+            <a href="#">
+                FORECAST
+            </a>
+        </th>
+        <th class="bestCase">
+            <a href="#">
+                BESTCASE
+            </a>
+        </th>
+        <th class='commit'>
+            <a href="#">
+                COMMIT
+            </a>
+        </th>
+        <th class="monthPlan">
+            <a href="#">
+                MONTHLY PLAN
+            </a>
+        </th>
+        <th class="comments">
+            <a href="#">
+                COMMENTS
+            </a>
+        </th>
+    </tr>
+    <tr ng-repeat="result in results| orderBy :orderByHeader:reverseSort track by $index ">
+        <td class="name">{{result.Name}}
+        </td>
+        <td class="plan">{{result.Plan}}</td>
+        <td class="forecast">{{result.Forecast}}</td>
+        <td class="bestCase"><span class='bestCase1'>{{result.Bestcase[0]}} </span></td>
+        <td td class="commit"><span class='commit1'>{{result.Commit[0]}} </span></td>
+        <td class="comments"> {{result.Comments}}</td>
+        <td class="monthPlan">{{result.MonthlyPlan}}</td>
+    </tr>
+
+</table>
+
+<script
+        src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+<script
+        src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"
+        integrity="sha256-eGE6blurk5sHj+rmkfsGYeKyZx3M4bG+ZlFyA7Kns7E="
+        crossorigin="anonymous"></script>
+<script>
+    src = "https://cdnjs.cloudflare.com/ajax/libs/jquery-ui-multiselect-widget/2.0.1/jquery.multiselect.js"
+</script>
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/angular-route/angular-route.js"></script>
+<script src="app.js"></script>
+<script src="multiselect.js"></script>
+</body>
+<script src="js/assignment2.js"></script>
+</html>

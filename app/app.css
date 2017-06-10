@@ -1,0 +1,68 @@
+/* app css stylesheet */
+body {
+    width: 80%;
+    background-color:transparent ;
+}
+
+h1 {
+    text-align: center;
+}
+
+#radioBtn{
+    margin-left: 20px;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin-left: 30px;
+}
+
+td {
+    text-align: center;
+}
+#span_v{
+    height: 25px;
+    width: 22px;
+    background-color: #CCCCCC;
+    color: whitesmoke;
+}
+
+th, td {
+    padding: 15px;
+}
+
+table{
+    width: 120%;
+    text-align: center;
+}
+
+#columnOptions{
+    background-color: #CCCCCC;
+}
+
+.comments, .plan, .forecast, .bestCase, .commit, .monthPlan {
+    visibility: visible;
+}
+
+.multi {
+    color: #999999;
+    position: static;
+    z-index: 1000;
+}
+
+.btn {
+    background-color: #1c94c4;
+    color: whitesmoke;
+}
+
+#check{
+    height: 260px;
+    width:80px;
+    background-color: #CCCCCC;
+
+}
+
+.hide {
+    display: none;
+}
